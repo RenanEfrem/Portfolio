@@ -1,0 +1,56 @@
+@media only screen and (max-width: 500px) {
+  nav {
+    display: none;
+  }
+  .project {
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .image {
+    display: none;
+  }
+  .name {
+    font-size: 68px;
+  }
+  .project {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .welcome {
+    font-size: 40px;
+  }
+  .name {
+    font-size: 54px;
+    letter-spacing: 0.2px;
+  }
+  .developer {
+    font-size: 16px;
+  }
+  .languages {
+    font-size: 16px;
+  }
+  .cv-download {
+    height: 35px;
+    width: 125px;
+    font-size: 13px;
+  }
+  #github {
+    font-size: 26px;
+    margin-top: 5px;
+  }
+  #facebook {
+    font-size: 26px;
+    margin-top: 5px;
+  }
+  footer .container-about h1 {
+    font-size: 16px;
+  }
+  footer .container-about p {
+    font-size: 14px;
+  }
+  .project {
+    display: none;
+  }
+}

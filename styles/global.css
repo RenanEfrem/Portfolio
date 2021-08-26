@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap');
+:root {
+    --black: #040404;
+    --grey: #1C1C1C;
+    --bg: #212121;
+    --white: #F5F5F5;
+    --green: #0AA335;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Exo', sans-serif;
+    background-color: var(--grey);
+    color: var(--white);
+}
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    border-width: 0px;
+    height: 70px;
+    background-color: var(--bg);
+}
+.light {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.title {
+    position: absolute;
+    left: 0px;
+    margin-left: 40px;
+}
+.navbar-item {
+    color: var(--white);
+    font-size: 19px;
+    font-weight: 500;
+    top: 10px;
+    text-decoration: none;
+    margin-right: 25px;
+    transition: .3s ease all;
+}
+.navbar-item-contact {
+    height: 50px;
+    width: 200px;
+    background-color: var(--green);
+    border-radius: 40px;
+    color: var(--white);
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: .3s ease all;
+}
+.navbar-item-contact:hover {
+    color: var(--grey);
+    background-color: #099230;
+}
+.navbar-item:hover {
+    color: #bebebe;
+}
+header p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: -5px;
+}
+header a {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--green);
+}
+main .container {
+
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.welcome {
+    color: var(--white);
+    font-size: 48px;
+    margin-bottom: -20px;
+}
+.name {
+    color: var(--white);
+    font-weight: bolder;
+    font-size: 72px;
+}
+.developer {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 24px;
+}
+.languages {
+    color: var(--green);
+    font-weight: normal;
+    font-size: 24px;
+}
+main .buttons {
+   margin-left: 50px;
+   margin-top: 10px;
+    
+}
+.cv-download {
+    font-family: 'Exo', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    width: 150px;
+    background-color: var(--green);
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    color: var(--white);
+    transition: .3s ease all;
+    cursor: pointer;
+}
+.cv-download:hover {
+    color: var(--grey);
+    background-color: #099230;
+}
+main .image {
+    position: absolute;
+    left: 55%;
+    top: 15%;
+    width: 500px;
+   
+}
+main .image:hover {
+    -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+}
+main .buttons {
+    display: flex;
+    flex-direction: row;
+}
+main .profile i {
+    margin-left: 20px;
+    margin-right: 1px;
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+main .profile i:hover {
+    color: var(--green);
+}
+/* Footer - Rodapé */
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--bg);
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: -50px;
+    height: 300px;
+    border-radius: 20px;
+}
+footer .container-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--bg);
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: -150px;
+    height: 100px;
+    border: 3px solid var(--green);
+    border-radius: 30px;
+}
+footer .container h1 {
+    margin-top: 15px;
+    color: var(--white);
+    font-size: 32px;
+    font-weight: bold;
+}
+footer .container-about h1 {
+    margin-top: 20px;
+    color: var(--white);
+    font-size: 32px;
+    font-weight: bold;
+}
+footer .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .container input[type="text"] {
+    height: 40px;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid var(--green);
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 10px;
+    transition: 0.2s ease all;
+
+}
+footer .container input[type="email"] {
+    height: 40px;
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid var(--green);
+    color: white;
+    border-radius: 30px;
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 10px;
+    transition: 0.2s ease all;
+}
+footer .container input[type="textarea"] {
+    height: 90px;
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid var(--green);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    transition: 0.2s ease all;
+
+}
+footer .container input[type="submit"] {
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: var(--green);
+    outline: none;
+    border: none;
+    color: var(--white);
+}
+footer .container input:hover {
+    border: 2px solid #099230;
+} 
+footer .container input:focus {
+    border: 2px solid var(--white);
+} 
+.gitprojects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.project {
+    margin-top: 5px;
+    background-color: var(--grey);
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 350px;
+    height: 200px;
+}
+.project-selected {
+    border: 3px solid var(--green);
+    margin-top: 5px;
+    background-color: var(--grey);
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 350px;
+    height: 200px;
+}
+footer .container .projects .gitprojects h1 {
+    color: var(--green);
+    font-size: 24px;
+    margin-top: 5px;
+}
+footer .container .projects .gitprojects h6 {
+    color: var(--white);
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 200;
+}
+
+footer .container .projects .gitprojects button {
+    font-family: 'exo';
+    color: var(--green);
+    background-color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 50px;
+    height: 50px;
+    width: 200px;
+    transition: 0.2s ease all;
+}
+footer .container .projects .gitprojects button:hover {
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--black);
+
+}
+footer .container .projects .gitprojects button:active {
+    background-color: #099230;
+    color: var(--black);
+
+}
+
+
+
