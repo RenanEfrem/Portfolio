@@ -5,25 +5,11 @@
   .project {
     display: none;
   }
-}
-@media only screen and (max-width: 850px) {
-  .image {
-    display: none;
-  }
-  .name {
-    font-size: 68px;
-  }
-  .project {
-    display: none;
-  }
-}
-@media only screen and (max-width: 500px) {
   .welcome {
     font-size: 40px;
   }
   .name {
     font-size: 54px;
-    letter-spacing: 0.2px;
   }
   .developer {
     font-size: 16px;
@@ -44,13 +30,47 @@
     font-size: 26px;
     margin-top: 5px;
   }
+  .project {
+    display: none;
+  }
+  footer .skills {
+    display: flex;
+    flex-direction: column;
+  }
+  #skills {
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 650px) {
+    footer .skills .card-skill {
+      font-size: 22px;
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+    footer .skills p {
+      font-size: 22px;
+    }
+    footer .skills i {
+      font-size: 56px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+  .image {
+    display: none;
+  }
+  .name {
+    font-size: 68px;
+  }
+  .project {
+    display: none;
+  }
   footer .container-about h1 {
     font-size: 16px;
   }
   footer .container-about p {
     font-size: 14px;
   }
-  .project {
-    display: none;
-  }
+  
 }
+
